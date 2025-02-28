@@ -4,7 +4,9 @@ import { ConfigProvider } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 import routes from './routes';
 
-const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes, {
+  basename: '/port-management-system'
+});
 
 const App: React.FC = () => {
   return (
